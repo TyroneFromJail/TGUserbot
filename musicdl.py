@@ -71,7 +71,7 @@ class MusicDLLib(loader.Library):
 
             if self.config["lossless_priority"] or not document:
                 try:
-                    q = await self._client.inline_query("@losslessrobot", full_name)
+                    q = await self._client.inline_query("@mephbot", full_name)
                 except BotResponseTimeoutError:
                     if retries >= self.config["retries"]:
                         raise Exception("Failed to download")
