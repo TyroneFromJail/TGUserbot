@@ -37,7 +37,7 @@ from pytgcalls.types.call_holder import CallHolder
 from pytgcalls.types.update_solver import UpdateSolver
 from telethon.tl.functions.phone import CreateGroupCallRequest
 from telethon.tl.types import DocumentAttributeFilename, Message
-from youtube_dl import YoutubeDL
+from yt_dlp import YoutubeDL
 
 from .. import loader, utils
 from ..inline.types import InlineCall
