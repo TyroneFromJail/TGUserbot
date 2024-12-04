@@ -11,7 +11,6 @@ __version__ = (2, 0, 0)
 # meta pic: https://static.dan.tatar/voicechat_icon.png
 # meta banner: https://mods.hikariatama.ru/badges/voicechat.jpg
 # meta developer: @hikarimods
-# requires: py-tgcalls youtube_dl
 # scope: hikka_only
 # scope: hikka_min 1.2.10
 
