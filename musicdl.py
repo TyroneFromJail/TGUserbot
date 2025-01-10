@@ -19,28 +19,28 @@ from telethon.tl.types import Document
 from .. import loader, utils
 
 
-class MusicDLLib(loader.Library):
-    developer = "@hikariatama"
-    version = (1, 0, 19)
+class MusicDLLibs(loader.Library):
+    developer = "@TyroneFromJail"
+    version = (1, 0, 20)
 
     def __init__(self):
         self.config = loader.LibraryConfig(
             loader.ConfigValue(
                 "timeout",
                 40,
-                "Timeout for downloading",
+                "Timeout per il download",
                 validator=loader.validators.Integer(minimum=5),
             ),
             loader.ConfigValue(
                 "retries",
                 3,
-                "Number of retries for downloading",
+                "Numero di tentativi per il download",
                 validator=loader.validators.Integer(minimum=0),
             ),
             loader.ConfigValue(
                 "lossless_priority",
                 False,
-                "If True, lossless music will be downloaded first",
+                "Se Vero, la musica lossless verrà scaricata prima",
                 validator=loader.validators.Boolean(),
             ),
         )
