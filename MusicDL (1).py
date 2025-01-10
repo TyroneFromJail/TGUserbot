@@ -35,7 +35,7 @@ class MusicDLMod(loader.Module):
     }
 
     async def client_ready(self, *_):
-        self.musicdls = await self.import_lib(
+        self.musicdl = await self.import_lib(
             "https://raw.githubusercontent.com/TyroneFromJail/TGUserbot/master/musicdl.py",
             suspend_on_error=True,
         )
@@ -49,7 +49,7 @@ class MusicDLMod(loader.Module):
             return
 
         message = await utils.answer(message, self.strings("loading"))
-        result = await self.musicdls.dl(args, only_document=True)
+        result = await self.musicdl.dl(args, only_document=True)
 
         if not result:
             await utils.answer(message, self.strings("404").format(args))
