@@ -49,7 +49,7 @@ class MusicDLMod(loader.Module):
             return
 
         message = await utils.answer(message, self.strings("loading"))
-        result = await self.musicdl.dl(args, only_document=True)
+        result = await self.musicdls.dl(args, only_document=True)
 
         if not result:
             await utils.answer(message, self.strings("404").format(args))
