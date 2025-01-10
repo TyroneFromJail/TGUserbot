@@ -19,7 +19,7 @@ from telethon.tl.types import Document
 from .. import loader, utils
 
 
-class MusicDLLibs(loader.Library):
+class MusicDLLibz(loader.Library):
     developer = "@TyroneFromJail"
     version = (1, 0, 20)
 
